@@ -1,0 +1,35 @@
+# -------------------------
+# System files (Mac)
+# -------------------------
+.DS_Store
+
+# -------------------------
+# Python cache
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# Temporary / logs
+# -------------------------
+*.log
+*.tmp
+
+# -------------------------
+# Optional: ignore scratch outputs
+# -------------------------
+outputs/temp/
+outputs/logs/
+
+# -------------------------
+# Large unnecessary files (if any)
+# -------------------------
+*.zip
+*.tar.gz
