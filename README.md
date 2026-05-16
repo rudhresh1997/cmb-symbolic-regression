@@ -1,27 +1,61 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19561564.svg)](https://doi.org/10.5281/zenodo.19561564)
-
 # CMB Symbolic Regression
 
-This repository contains the code, synthetic datasets, trained symbolic regression models, baseline Random Forest results, and figures used in the paper:
+This repository contains the code, synthetic datasets, trained symbolic-regression models, baseline-model results, robustness diagnostics, uncertainty analyses, and figures used in the paper:
 
-"Symbolic Regression for Interpretable Cosmological Parameter Inference from the CMB"
+**Interpretable symbolic regression for cosmological parameter recovery from CMB power spectra**
 
-## Contents
-- `cmb_pysr_final.ipynb`: main analysis notebook
-- `cmb_sampled_parameters.csv`: sampled cosmological parameters
-- `cmb_spectra_data.npz`: synthetic CMB spectra
-- `pysr_*.pkl`: trained symbolic regression models
-- `rf_baseline_results.csv`: Random Forest baseline results
-- `final_symbolic_regression_summary.csv`: summary results
-- `figures/`: figures used in the paper
+## Overview
+
+This project investigates symbolic regression as an interpretable framework for recovering cosmological parameters from synthetic cosmic microwave background (CMB) power spectra. Synthetic \(TT\), \(TE\), and \(EE\) spectra are generated using CAMB across a five-parameter \(\Lambda\)CDM-inspired parameter space. Symbolic regression models are trained to recover:
+
+- \(n_s\)
+- \(\ln(10^{10}A_s)\)
+- \(\omega_b\)
+- \(\omega_{\rm cdm}\)
+- \(\tau\)
+
+The repository also includes robustness tests, bootstrap uncertainty estimates, calibration diagnostics, feature/operator ablations, baseline comparisons, and physics-informed feature engineering for \(\omega_b\).
+
+## Main files
+
+- `cmb_pysr_final.ipynb`  
+  Original main analysis notebook.
+
+- `cmb_pysr_final-AC.ipynb`  
+  Updated Astronomy and Computing submission notebook. This includes the final analyses used in the manuscript, including bootstrap uncertainty, calibration diagnostics, noise robustness, cross-validation, feature ablations, operator ablations, perturbation-based interpretability tests, complexity-frontier diagnostics, and final manuscript figures.
+
+- `cmb_sampled_parameters.csv`  
+  Sampled cosmological parameters.
+
+- `cmb_spectra_data.npz`  
+  Synthetic CAMB-generated CMB spectra.
+
+- `final_symbolic_regression_summary.csv`  
+  Summary of symbolic-regression model performance.
+
+- `rf_baseline_results.csv`  
+  Random Forest baseline results.
+
+## Directories
+
+- `figures/`  
+  Original figures generated during the analysis.
+
+- `figures_AC/`  
+  Final figures used for the Astronomy and Computing manuscript.
+
+- `models/`  
+  Trained symbolic-regression models, bootstrap models, robustness models, and ablation models.
+
+- `outputs/`  
+  Analysis outputs generated during notebook execution.
+
+- `results/`  
+  CSV/NPZ summaries for bootstrap uncertainty, calibration, robustness, ablations, baselines, perturbation tests, and complexity-frontier diagnostics.
 
 ## Reproducibility
-Run `cmb_pysr_final.ipynb` to regenerate the analysis products.
 
-## Main dependencies
-- Python
-- CAMB
-- PySR
-- NumPy
-- pandas
-- scikit-learn
+To reproduce the final manuscript results, run:
+
+```bash
+jupyter notebook cmb_pysr_final-AC.ipynb
