@@ -1,36 +1,11 @@
 cff-version: 1.2.0
-
-message: "If you use this repository, please cite the associated paper and 
-software release."
-
+message: "If you use this repository, please cite it as below."
 title: "CMB Symbolic Regression"
-
 version: "v1.2-final-release"
-
-date-released: 2026-05-16
-
+date-released: "2026-05-16"
 authors:
   - family-names: "Manoharan"
     given-names: "Rudhresh"
-    affiliation: "EUCOS-CASPER, Physics Department, Baylor University"
-
   - family-names: "Cleaver"
     given-names: "Gerald B."
-    affiliation: "EUCOS-CASPER, Physics Department, Baylor University"
-
-abstract: >
-  Repository containing symbolic regression models, synthetic CMB 
-datasets,
-  robustness analyses, uncertainty diagnostics, and reproducibility assets
-  for interpretable cosmological parameter inference from CMB power 
-spectra.
-
-keywords:
-  - cosmology
-  - cosmic microwave background
-  - symbolic regression
-  - interpretable machine learning
-  - computational cosmology
-  - PySR
-
 repository-code: "https://github.com/rudhresh1997/cmb-symbolic-regression"
