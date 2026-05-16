@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20224914.svg)](https://doi.org/10.5281/zenodo.20224914)
+
 # CMB Symbolic Regression
 
 This repository contains the code, synthetic datasets, trained symbolic-regression models, baseline-model results, robustness diagnostics, uncertainty analyses, and figures used in the paper:
